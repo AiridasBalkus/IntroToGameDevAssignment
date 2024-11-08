@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: #f4f4f9;
-    color: #333333;
+    color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 header {
-    background-color: #333;
+    background-color: #525151;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -20,15 +20,6 @@ main {
     max-width: 800px;
     margin: 20px 0;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-}
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -38,17 +29,17 @@ footer {
 }
 .card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #af9b9b;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
     padding: 20px;
     width: 100%;
     max-width: 250px;
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .card h3 {
     font-size: 1.3em;
@@ -56,18 +47,46 @@ footer {
 }
 .card p {
     font-size: 0.95em;
-    color: #555;
+    color: #525151;
 }
 .card a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: #007acc;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
 }
 .card a:hover {
-    background-color: #005f99;
+    background-color: #0689e1;
+}
+.progress-bar-container {
+    width: 200px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.progress-bar {
+    width: 20%;
+    height: 100%;
+    background-color: #ff0000;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress-text {
+    position: relative;
+    z-index: 1;
+    line-height: 30px;
 }
